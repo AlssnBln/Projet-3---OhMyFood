@@ -1,0 +1,61 @@
+footer {
+    display: block;
+    .footer_container {
+        display: flex;
+        flex-direction: column !important;
+        background-color: #353535;
+        color: white;
+        align-items: center;
+        gap: 30%;
+        h4 {
+            font-family: "Shrikhand", cursive;
+            margin: 20px 0 5px 20px;
+            font-size: 30px;
+            display: block;
+            margin-block-start: 1.33em;
+            margin-block-end: 1.33em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            font-family: 'Shrikhand', cursive;
+        }
+        .footer_container_link {
+            flex-direction: row;
+            padding: 35px;
+            gap: 75%;
+            width: 95%;
+            font-family: "Roboto", sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            padding-bottom: 20px;
+            .link_logo, footer .footer_container .footer_container_link .link_nologo_container {
+                display: flex;
+                flex-direction: column;
+            }
+            ul {
+                margin-block-start: 1em;
+                margin-block-end: 1em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                padding-inline-start: 40px;
+                li {
+                    margin-top: 8px;
+                    .footer_logo {
+                        margin-right: 5px;
+                    }
+                    a {
+                        color: white;
+                    }
+                } 
+            }
+            .link_logo-2 a {
+                margin-left: -4px;
+            }
+            .link_logo, footer .footer_container .footer_container_link .link_nologo_container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

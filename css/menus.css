@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+}
+body div {
+  display: block;
+}
+
+/* <!-- HEADER --> */
+.menus figure {
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 40px;
+          margin-inline-start: 40px;
+  -webkit-margin-end: 40px;
+          margin-inline-end: 40px;
+}
+.menus .back {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  margin: 0;
+}
+.menus .back a {
+  color: black;
+  justify-content: flex-start;
+  margin-right: 35px;
+  padding: 20px;
+}
+.menus .back .logo_menus {
+  display: flex;
+}
+.menus .BG_Images {
+  width: 100%;
+  margin: 0;
+}
+.menus .BG_Images img {
+  width: 100%;
+  min-width: 360px;
+  height: 100%;
+  max-height: 300px;
+  margin: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* <!-- MAIN/MENUS --> */
+main {
+  display: block;
+}
+main .menu .menu_restaurant {
+  display: flex;
+  width: 100%;
+  border-radius: 40px 40px 0 0;
+  background-color: #F6F6F6;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+main .menu .menu_restaurant h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 25px;
+  margin: 20px 20px 20px 20px;
+  display: block;
+  -webkit-margin-start: 35px;
+          margin-inline-start: 35px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-weight: bold;
+  font-family: "Shrikhand", cursive;
+}
+main .menu .menu_restaurant .menu_restaurant_like {
+  position: relative;
+}
+main .menu .menu_restaurant .menu_restaurant_like:hover .heart {
+  color: transparent;
+  transition: 1.5s ease;
+}
+main .menu .menu_restaurant .menu_restaurant_like:hover .heart-full {
+  transform: scale(0.92);
+  opacity: 1;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+main .menu .menu_restaurant .menu_restaurant_like .heart {
+  position: relative;
+  color: #363636;
+  font-weight: 400;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-right: 20px;
+}
+main .menu .menu_restaurant .menu_restaurant_like .heart-full {
+  position: absolute;
+  right: 0;
+  top: -1px;
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  color: transparent;
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: bottom;
+  transition: 0.5s ease;
+  font-weight: 900;
+}
+main .menu .menu_restaurant .menu_restaurant_like .fa-heart:before {
+  content: "\f004";
+}
+main .menu .menu_list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main .menu .menu_list .starter, main .menu .menu_list .plats, main .menu .menu_list .desserts {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 20px 20px 20px;
+  width: 95%;
+  min-width: 340px;
+}
+main .menu .menu_list .starter .title, main .menu .menu_list .plats .title, main .menu .menu_list .desserts .title {
+  margin-left: 20px;
+}
+main .menu .menu_list .starter .title h2, main .menu .menu_list .plats .title h2, main .menu .menu_list .desserts .title h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  display: block;
+  -webkit-margin-before: 0.83em;
+          margin-block-start: 0.83em;
+  -webkit-margin-after: 0.83em;
+          margin-block-end: 0.83em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-weight: bold;
+}
+main .menu .menu_list .starter .title .underline, main .menu .menu_list .plats .title .underline, main .menu .menu_list .desserts .title .underline {
+  background-color: #99E2D0;
+  width: 45px;
+  height: 3px;
+}
+main .menu .menu_list .starter .menus_details-1, main .menu .menu_list .starter .menus_details-2, main .menu .menu_list .starter .menus_details-3, main .menu .menu_list .starter .menus_details-4, main .menu .menu_list .starter .menus_details-5, main .menu .menu_list .starter .menus_details-6, main .menu .menu_list .starter .menus_details-7, main .menu .menu_list .starter .menus_details-8, main .menu .menu_list .starter .menus_details-9, main .menu .menu_list .plats .menus_details-1, main .menu .menu_list .plats .menus_details-2, main .menu .menu_list .plats .menus_details-3, main .menu .menu_list .plats .menus_details-4, main .menu .menu_list .plats .menus_details-5, main .menu .menu_list .plats .menus_details-6, main .menu .menu_list .plats .menus_details-7, main .menu .menu_list .plats .menus_details-8, main .menu .menu_list .plats .menus_details-9, main .menu .menu_list .desserts .menus_details-1, main .menu .menu_list .desserts .menus_details-2, main .menu .menu_list .desserts .menus_details-3, main .menu .menu_list .desserts .menus_details-4, main .menu .menu_list .desserts .menus_details-5, main .menu .menu_list .desserts .menus_details-6, main .menu .menu_list .desserts .menus_details-7, main .menu .menu_list .desserts .menus_details-8, main .menu .menu_list .desserts .menus_details-9 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  height: 70px;
+  margin-top: 20px;
+  width: 100%;
+  box-shadow: 5px 5px 10px #e7e7e7;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-animation: view_menu 800ms both;
+          animation: view_menu 800ms both;
+  color: black;
+}
+main .menu .menu_list .starter .menus_details-1 .menus_details_name, main .menu .menu_list .starter .menus_details-2 .menus_details_name, main .menu .menu_list .starter .menus_details-3 .menus_details_name, main .menu .menu_list .starter .menus_details-4 .menus_details_name, main .menu .menu_list .starter .menus_details-5 .menus_details_name, main .menu .menu_list .starter .menus_details-6 .menus_details_name, main .menu .menu_list .starter .menus_details-7 .menus_details_name, main .menu .menu_list .starter .menus_details-8 .menus_details_name, main .menu .menu_list .starter .menus_details-9 .menus_details_name, main .menu .menu_list .plats .menus_details-1 .menus_details_name, main .menu .menu_list .plats .menus_details-2 .menus_details_name, main .menu .menu_list .plats .menus_details-3 .menus_details_name, main .menu .menu_list .plats .menus_details-4 .menus_details_name, main .menu .menu_list .plats .menus_details-5 .menus_details_name, main .menu .menu_list .plats .menus_details-6 .menus_details_name, main .menu .menu_list .plats .menus_details-7 .menus_details_name, main .menu .menu_list .plats .menus_details-8 .menus_details_name, main .menu .menu_list .plats .menus_details-9 .menus_details_name, main .menu .menu_list .desserts .menus_details-1 .menus_details_name, main .menu .menu_list .desserts .menus_details-2 .menus_details_name, main .menu .menu_list .desserts .menus_details-3 .menus_details_name, main .menu .menu_list .desserts .menus_details-4 .menus_details_name, main .menu .menu_list .desserts .menus_details-5 .menus_details_name, main .menu .menu_list .desserts .menus_details-6 .menus_details_name, main .menu .menu_list .desserts .menus_details-7 .menus_details_name, main .menu .menu_list .desserts .menus_details-8 .menus_details_name, main .menu .menu_list .desserts .menus_details-9 .menus_details_name {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-top: 15px;
+  width: 55%;
+  transition-duration: 800ms;
+}
+main .menu .menu_list .starter .menus_details-1 .menus_details_name h3, main .menu .menu_list .starter .menus_details-2 .menus_details_name h3, main .menu .menu_list .starter .menus_details-3 .menus_details_name h3, main .menu .menu_list .starter .menus_details-4 .menus_details_name h3, main .menu .menu_list .starter .menus_details-5 .menus_details_name h3, main .menu .menu_list .starter .menus_details-6 .menus_details_name h3, main .menu .menu_list .starter .menus_details-7 .menus_details_name h3, main .menu .menu_list .starter .menus_details-8 .menus_details_name h3, main .menu .menu_list .starter .menus_details-9 .menus_details_name h3, main .menu .menu_list .plats .menus_details-1 .menus_details_name h3, main .menu .menu_list .plats .menus_details-2 .menus_details_name h3, main .menu .menu_list .plats .menus_details-3 .menus_details_name h3, main .menu .menu_list .plats .menus_details-4 .menus_details_name h3, main .menu .menu_list .plats .menus_details-5 .menus_details_name h3, main .menu .menu_list .plats .menus_details-6 .menus_details_name h3, main .menu .menu_list .plats .menus_details-7 .menus_details_name h3, main .menu .menu_list .plats .menus_details-8 .menus_details_name h3, main .menu .menu_list .plats .menus_details-9 .menus_details_name h3, main .menu .menu_list .desserts .menus_details-1 .menus_details_name h3, main .menu .menu_list .desserts .menus_details-2 .menus_details_name h3, main .menu .menu_list .desserts .menus_details-3 .menus_details_name h3, main .menu .menu_list .desserts .menus_details-4 .menus_details_name h3, main .menu .menu_list .desserts .menus_details-5 .menus_details_name h3, main .menu .menu_list .desserts .menus_details-6 .menus_details_name h3, main .menu .menu_list .desserts .menus_details-7 .menus_details_name h3, main .menu .menu_list .desserts .menus_details-8 .menus_details_name h3, main .menu .menu_list .desserts .menus_details-9 .menus_details_name h3 {
+  margin: 0;
+  padding-right: 0;
+  font-size: 14px;
+  white-space: nowrap;
+  width: 98%;
+  display: block;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-weight: bold;
+}
+main .menu .menu_list .starter .menus_details-1 .menus_details_name p, main .menu .menu_list .starter .menus_details-2 .menus_details_name p, main .menu .menu_list .starter .menus_details-3 .menus_details_name p, main .menu .menu_list .starter .menus_details-4 .menus_details_name p, main .menu .menu_list .starter .menus_details-5 .menus_details_name p, main .menu .menu_list .starter .menus_details-6 .menus_details_name p, main .menu .menu_list .starter .menus_details-7 .menus_details_name p, main .menu .menu_list .starter .menus_details-8 .menus_details_name p, main .menu .menu_list .starter .menus_details-9 .menus_details_name p, main .menu .menu_list .plats .menus_details-1 .menus_details_name p, main .menu .menu_list .plats .menus_details-2 .menus_details_name p, main .menu .menu_list .plats .menus_details-3 .menus_details_name p, main .menu .menu_list .plats .menus_details-4 .menus_details_name p, main .menu .menu_list .plats .menus_details-5 .menus_details_name p, main .menu .menu_list .plats .menus_details-6 .menus_details_name p, main .menu .menu_list .plats .menus_details-7 .menus_details_name p, main .menu .menu_list .plats .menus_details-8 .menus_details_name p, main .menu .menu_list .plats .menus_details-9 .menus_details_name p, main .menu .menu_list .desserts .menus_details-1 .menus_details_name p, main .menu .menu_list .desserts .menus_details-2 .menus_details_name p, main .menu .menu_list .desserts .menus_details-3 .menus_details_name p, main .menu .menu_list .desserts .menus_details-4 .menus_details_name p, main .menu .menu_list .desserts .menus_details-5 .menus_details_name p, main .menu .menu_list .desserts .menus_details-6 .menus_details_name p, main .menu .menu_list .desserts .menus_details-7 .menus_details_name p, main .menu .menu_list .desserts .menus_details-8 .menus_details_name p, main .menu .menu_list .desserts .menus_details-9 .menus_details_name p {
+  margin-top: 8px;
+  font-size: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 98%;
+  display: block;
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+  -webkit-margin-after: 2em;
+          margin-block-end: 2em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+main .menu .menu_list .starter .menus_details-1 .menus_details_price, main .menu .menu_list .starter .menus_details-2 .menus_details_price, main .menu .menu_list .starter .menus_details-3 .menus_details_price, main .menu .menu_list .starter .menus_details-4 .menus_details_price, main .menu .menu_list .starter .menus_details-5 .menus_details_price, main .menu .menu_list .starter .menus_details-6 .menus_details_price, main .menu .menu_list .starter .menus_details-7 .menus_details_price, main .menu .menu_list .starter .menus_details-8 .menus_details_price, main .menu .menu_list .starter .menus_details-9 .menus_details_price, main .menu .menu_list .plats .menus_details-1 .menus_details_price, main .menu .menu_list .plats .menus_details-2 .menus_details_price, main .menu .menu_list .plats .menus_details-3 .menus_details_price, main .menu .menu_list .plats .menus_details-4 .menus_details_price, main .menu .menu_list .plats .menus_details-5 .menus_details_price, main .menu .menu_list .plats .menus_details-6 .menus_details_price, main .menu .menu_list .plats .menus_details-7 .menus_details_price, main .menu .menu_list .plats .menus_details-8 .menus_details_price, main .menu .menu_list .plats .menus_details-9 .menus_details_price, main .menu .menu_list .desserts .menus_details-1 .menus_details_price, main .menu .menu_list .desserts .menus_details-2 .menus_details_price, main .menu .menu_list .desserts .menus_details-3 .menus_details_price, main .menu .menu_list .desserts .menus_details-4 .menus_details_price, main .menu .menu_list .desserts .menus_details-5 .menus_details_price, main .menu .menu_list .desserts .menus_details-6 .menus_details_price, main .menu .menu_list .desserts .menus_details-7 .menus_details_price, main .menu .menu_list .desserts .menus_details-8 .menus_details_price, main .menu .menu_list .desserts .menus_details-9 .menus_details_price {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 25px;
+  padding: 10px;
+}
+main .menu .menu_list .starter .menus_details-1 .menus_details_slide, main .menu .menu_list .starter .menus_details-2 .menus_details_slide, main .menu .menu_list .starter .menus_details-3 .menus_details_slide, main .menu .menu_list .starter .menus_details-4 .menus_details_slide, main .menu .menu_list .starter .menus_details-5 .menus_details_slide, main .menu .menu_list .starter .menus_details-6 .menus_details_slide, main .menu .menu_list .starter .menus_details-7 .menus_details_slide, main .menu .menu_list .starter .menus_details-8 .menus_details_slide, main .menu .menu_list .starter .menus_details-9 .menus_details_slide, main .menu .menu_list .plats .menus_details-1 .menus_details_slide, main .menu .menu_list .plats .menus_details-2 .menus_details_slide, main .menu .menu_list .plats .menus_details-3 .menus_details_slide, main .menu .menu_list .plats .menus_details-4 .menus_details_slide, main .menu .menu_list .plats .menus_details-5 .menus_details_slide, main .menu .menu_list .plats .menus_details-6 .menus_details_slide, main .menu .menu_list .plats .menus_details-7 .menus_details_slide, main .menu .menu_list .plats .menus_details-8 .menus_details_slide, main .menu .menu_list .plats .menus_details-9 .menus_details_slide, main .menu .menu_list .desserts .menus_details-1 .menus_details_slide, main .menu .menu_list .desserts .menus_details-2 .menus_details_slide, main .menu .menu_list .desserts .menus_details-3 .menus_details_slide, main .menu .menu_list .desserts .menus_details-4 .menus_details_slide, main .menu .menu_list .desserts .menus_details-5 .menus_details_slide, main .menu .menu_list .desserts .menus_details-6 .menus_details_slide, main .menu .menu_list .desserts .menus_details-7 .menus_details_slide, main .menu .menu_list .desserts .menus_details-8 .menus_details_slide, main .menu .menu_list .desserts .menus_details-9 .menus_details_slide {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  width: 60px;
+  flex-basis: 30px;
+  transition: 0.8s;
+}
+main .menu .menu_list .starter .menus_details-1 .menus_details_slide i, main .menu .menu_list .starter .menus_details-2 .menus_details_slide i, main .menu .menu_list .starter .menus_details-3 .menus_details_slide i, main .menu .menu_list .starter .menus_details-4 .menus_details_slide i, main .menu .menu_list .starter .menus_details-5 .menus_details_slide i, main .menu .menu_list .starter .menus_details-6 .menus_details_slide i, main .menu .menu_list .starter .menus_details-7 .menus_details_slide i, main .menu .menu_list .starter .menus_details-8 .menus_details_slide i, main .menu .menu_list .starter .menus_details-9 .menus_details_slide i, main .menu .menu_list .plats .menus_details-1 .menus_details_slide i, main .menu .menu_list .plats .menus_details-2 .menus_details_slide i, main .menu .menu_list .plats .menus_details-3 .menus_details_slide i, main .menu .menu_list .plats .menus_details-4 .menus_details_slide i, main .menu .menu_list .plats .menus_details-5 .menus_details_slide i, main .menu .menu_list .plats .menus_details-6 .menus_details_slide i, main .menu .menu_list .plats .menus_details-7 .menus_details_slide i, main .menu .menu_list .plats .menus_details-8 .menus_details_slide i, main .menu .menu_list .plats .menus_details-9 .menus_details_slide i, main .menu .menu_list .desserts .menus_details-1 .menus_details_slide i, main .menu .menu_list .desserts .menus_details-2 .menus_details_slide i, main .menu .menu_list .desserts .menus_details-3 .menus_details_slide i, main .menu .menu_list .desserts .menus_details-4 .menus_details_slide i, main .menu .menu_list .desserts .menus_details-5 .menus_details_slide i, main .menu .menu_list .desserts .menus_details-6 .menus_details_slide i, main .menu .menu_list .desserts .menus_details-7 .menus_details_slide i, main .menu .menu_list .desserts .menus_details-8 .menus_details_slide i, main .menu .menu_list .desserts .menus_details-9 .menus_details_slide i {
+  font-size: 25px;
+  color: transparent;
+}
+main .menu .menu_list .starter .menus_details-1:hover .menus_details_slide, main .menu .menu_list .starter .menus_details-2:hover .menus_details_slide, main .menu .menu_list .starter .menus_details-3:hover .menus_details_slide, main .menu .menu_list .starter .menus_details-4:hover .menus_details_slide, main .menu .menu_list .starter .menus_details-5:hover .menus_details_slide, main .menu .menu_list .starter .menus_details-6:hover .menus_details_slide, main .menu .menu_list .starter .menus_details-7:hover .menus_details_slide, main .menu .menu_list .starter .menus_details-8:hover .menus_details_slide, main .menu .menu_list .starter .menus_details-9:hover .menus_details_slide, main .menu .menu_list .plats .menus_details-1:hover .menus_details_slide, main .menu .menu_list .plats .menus_details-2:hover .menus_details_slide, main .menu .menu_list .plats .menus_details-3:hover .menus_details_slide, main .menu .menu_list .plats .menus_details-4:hover .menus_details_slide, main .menu .menu_list .plats .menus_details-5:hover .menus_details_slide, main .menu .menu_list .plats .menus_details-6:hover .menus_details_slide, main .menu .menu_list .plats .menus_details-7:hover .menus_details_slide, main .menu .menu_list .plats .menus_details-8:hover .menus_details_slide, main .menu .menu_list .plats .menus_details-9:hover .menus_details_slide, main .menu .menu_list .desserts .menus_details-1:hover .menus_details_slide, main .menu .menu_list .desserts .menus_details-2:hover .menus_details_slide, main .menu .menu_list .desserts .menus_details-3:hover .menus_details_slide, main .menu .menu_list .desserts .menus_details-4:hover .menus_details_slide, main .menu .menu_list .desserts .menus_details-5:hover .menus_details_slide, main .menu .menu_list .desserts .menus_details-6:hover .menus_details_slide, main .menu .menu_list .desserts .menus_details-7:hover .menus_details_slide, main .menu .menu_list .desserts .menus_details-8:hover .menus_details_slide, main .menu .menu_list .desserts .menus_details-9:hover .menus_details_slide {
+  display: grid;
+  place-items: center;
+  background-color: #99E2D0;
+  height: 100%;
+  flex-basis: 65px;
+  width: 60px;
+}
+main .menu .menu_list .starter .menus_details-1:hover .menus_details_slide i, main .menu .menu_list .starter .menus_details-2:hover .menus_details_slide i, main .menu .menu_list .starter .menus_details-3:hover .menus_details_slide i, main .menu .menu_list .starter .menus_details-4:hover .menus_details_slide i, main .menu .menu_list .starter .menus_details-5:hover .menus_details_slide i, main .menu .menu_list .starter .menus_details-6:hover .menus_details_slide i, main .menu .menu_list .starter .menus_details-7:hover .menus_details_slide i, main .menu .menu_list .starter .menus_details-8:hover .menus_details_slide i, main .menu .menu_list .starter .menus_details-9:hover .menus_details_slide i, main .menu .menu_list .plats .menus_details-1:hover .menus_details_slide i, main .menu .menu_list .plats .menus_details-2:hover .menus_details_slide i, main .menu .menu_list .plats .menus_details-3:hover .menus_details_slide i, main .menu .menu_list .plats .menus_details-4:hover .menus_details_slide i, main .menu .menu_list .plats .menus_details-5:hover .menus_details_slide i, main .menu .menu_list .plats .menus_details-6:hover .menus_details_slide i, main .menu .menu_list .plats .menus_details-7:hover .menus_details_slide i, main .menu .menu_list .plats .menus_details-8:hover .menus_details_slide i, main .menu .menu_list .plats .menus_details-9:hover .menus_details_slide i, main .menu .menu_list .desserts .menus_details-1:hover .menus_details_slide i, main .menu .menu_list .desserts .menus_details-2:hover .menus_details_slide i, main .menu .menu_list .desserts .menus_details-3:hover .menus_details_slide i, main .menu .menu_list .desserts .menus_details-4:hover .menus_details_slide i, main .menu .menu_list .desserts .menus_details-5:hover .menus_details_slide i, main .menu .menu_list .desserts .menus_details-6:hover .menus_details_slide i, main .menu .menu_list .desserts .menus_details-7:hover .menus_details_slide i, main .menu .menu_list .desserts .menus_details-8:hover .menus_details_slide i, main .menu .menu_list .desserts .menus_details-9:hover .menus_details_slide i {
+  transition: 0.8s;
+  transform: rotate(360deg);
+  color: white;
+}
+main .btn_commande {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f6f6f6;
+}
+main .btn_commande button {
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: none;
+  border-radius: 30px;
+  padding: 15px 50px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 6px #7a7a7a;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+main .btn_commande button:hover {
+  background: linear-gradient(rgba(255, 121, 218, 0.9), rgba(147, 86, 220, 0.9));
+  box-shadow: 2px 2px 6px #3a3a3a;
+}
+
+/* <!-- FOOTER --> */
+footer {
+  display: block;
+}
+footer .footer_container {
+  display: flex;
+  flex-direction: column !important;
+  background-color: #353535;
+  color: white;
+}
+footer .footer_container h4 {
+  font-family: "Shrikhand", cursive;
+  font-size: 25px;
+  margin: 20px 0 5px 20px;
+  display: block;
+  -webkit-margin-before: 1.33em;
+          margin-block-start: 1.33em;
+  -webkit-margin-after: 1.33em;
+          margin-block-end: 1.33em;
+  -webkit-margin-start: 17px;
+          margin-inline-start: 17px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-weight: bold;
+}
+footer .footer_container .footer_container_link {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-bottom: 20px;
+  margin-left: 10px;
+}
+footer .footer_container .footer_container_link ul {
+  display: block;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  -webkit-padding-start: 40px;
+          padding-inline-start: 40px;
+}
+footer .footer_container .footer_container_link ul li {
+  margin-top: 8px;
+  display: list-item;
+}
+footer .footer_container .footer_container_link ul li .footer_logo {
+  margin-right: 5px;
+}
+footer .footer_container .footer_container_link ul li i:before {
+  content: "\f2e7";
+}
+footer .footer_container .footer_container_link ul li a {
+  color: white;
+}/*# sourceMappingURL=menus.css.map */

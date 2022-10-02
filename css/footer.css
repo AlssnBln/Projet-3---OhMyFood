@@ -6,8 +6,8 @@ footer .footer_container {
   flex-direction: column !important;
   background-color: #353535;
   color: white;
-  align-items: center;
   gap: 30%;
+  padding-left: 20px;
 }
 footer .footer_container h4 {
   font-family: "Shrikhand", cursive;
@@ -16,41 +16,40 @@ footer .footer_container h4 {
   display: block;
   -webkit-margin-before: 1.33em;
           margin-block-start: 1.33em;
-  -webkit-margin-after: 1.33em;
-          margin-block-end: 1.33em;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: -10px;
-          margin-inline-end: -10px;
+  -webkit-margin-after: 0.33em;
+          margin-block-end: 0.33em;
+  -webkit-margin-start: 17px;
+          margin-inline-start: 17px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
   font-weight: bold;
   font-family: "Shrikhand", cursive;
 }
 footer .footer_container .footer_container_link {
   flex-direction: row;
-  padding: 35px;
   gap: 75%;
   width: 95%;
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding-bottom: 20px;
 }
 footer .footer_container .footer_container_link .link_logo, footer .footer_container .footer_container_link footer .footer_container .footer_container_link .link_nologo_container {
   display: flex;
   flex-direction: column;
 }
 footer .footer_container .footer_container_link ul {
-  -webkit-margin-before: 1em;
-          margin-block-start: 1em;
-  -webkit-margin-after: 1em;
-          margin-block-end: 1em;
+  -webkit-margin-before: -3em;
+          margin-block-start: -3em;
+  -webkit-margin-after: 2em;
+          margin-block-end: 2em;
   -webkit-margin-start: 0px;
           margin-inline-start: 0px;
   -webkit-margin-end: 0px;
           margin-inline-end: 0px;
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
+  margin-left: -55px;
 }
 footer .footer_container .footer_container_link ul li {
   margin-top: 8px;

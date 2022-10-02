@@ -41,11 +41,11 @@ main .functioning ol {
 main .functioning ol li {
   position: relative;
   counter-increment: steps;
-  width: 80%;
+  width: 115%;
   background: #F6F6F6;
   padding: 25px;
   border-radius: 20px;
-  margin: 20px auto;
+  margin: 20px -35px;
   display: list-item;
 }
 main .functioning ol li:hover {
@@ -69,7 +69,7 @@ main .functioning ol li i {
 }
 main #restaurants {
   display: flex;
-  width: 100%;
+  width: 110%;
   flex-direction: column;
   background-color: #F6F6F6;
   font-family: "Roboto", sans-serif;
@@ -100,10 +100,10 @@ main #restaurants .list_restaurants {
 main #restaurants .list_restaurants a {
   color: black;
   display: flex;
-  width: 95%;
+  width: 100%;
   max-width: 700px;
   height: 16em;
-  margin: 0 0 15px 0;
+  margin: 0 0 15px -40px;
 }
 main #restaurants .list_restaurants a figure {
   box-shadow: 0 0 6px grey;

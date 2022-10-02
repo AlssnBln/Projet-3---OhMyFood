@@ -20,8 +20,8 @@ footer .footer_container h4 {
           margin-block-end: 1.33em;
   -webkit-margin-start: 0px;
           margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
+  -webkit-margin-end: -10px;
+          margin-inline-end: -10px;
   font-weight: bold;
   font-family: "Shrikhand", cursive;
 }
@@ -49,8 +49,8 @@ footer .footer_container .footer_container_link ul {
           margin-inline-start: 0px;
   -webkit-margin-end: 0px;
           margin-inline-end: 0px;
-  -webkit-padding-start: 40px;
-          padding-inline-start: 40px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
 }
 footer .footer_container .footer_container_link ul li {
   margin-top: 8px;

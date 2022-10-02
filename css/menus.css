@@ -125,7 +125,7 @@ main .menu .menu_list .starter, main .menu .menu_list .plats, main .menu .menu_l
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 0 20px 20px 20px;
+  margin: 0 20px 20px 8px;
   width: 95%;
   min-width: 340px;
 }
